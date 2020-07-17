@@ -9,7 +9,7 @@
 //  }
 //  power(a,b)
 
- //2. Any year is entered through the keyboard. Write a function to determine whether the year is a leap year or not.
+//2. Any year is entered through the keyboard. Write a function to determine whether the year is a leap year or not.
 //  function leap(year){
 //     if( (0 == year % 4) && (0 != year % 100) || (0 == year % 400) )
 // 		{
@@ -26,20 +26,118 @@
 // area = S(S − a)(S − b)(S − c)
 // where, S = ( a + b + c ) / 2
 // Calculate area of triangle using 2 functions
-x = +prompt("Enter length of 1st side");
-y = +prompt("Enter length of 2st side");
-z = +prompt("Enter length of 3st side");
-function S(a,b,c){
-    return ss=( a + b + c ) / 2
-    
+// x = +prompt("Enter length of 1st side");
+// y = +prompt("Enter length of 2st side");
+// z = +prompt("Enter length of 3st side");
+// function S(a,b,c){
+//     return ss=( a + b + c ) / 2
 
+
+// }
+
+// function area (a,b,c){
+//     var Ss=S(a,b,c)
+//     var are = Ss*((Ss - a)*(Ss -b)*(Ss - c))
+// alert("The Area Of triangle is "+are)
+
+// }
+// area(x,y,z)
+
+//4. Write a function that receives marks received by a student in 3 subjects  
+// function mainFunction(a,b,c)
+// {
+//     a = +prompt("Enter marks of 1st subject:");
+//     b = +prompt("Enter marks of 1st subject:");
+//     c = +prompt("Enter marks of 1st subject:");
+//     function average(){
+//         var avg = (a+b+c) / 3;
+//         return avg;
+//     }
+//     function percent(){
+//         var sum = a + b + c;
+//         var total = 300;
+//         var per = (sum / total)*100;
+//         return per
+//     }
+//     document.write("Average marks: "+average()+"</br>"+"Percentage: "+ percent()+"%");
+// }
+// mainFunction();
+
+// 5. You have learned the function indexOf. Code your own custom function that will perform the same functionality. You can code for single character as of now
+
+// function index(str,val){
+//     for( a in str){
+//         if (str[a]===val){
+
+//             console.log(a)
+
+//         }
+//         else{
+
+//         }
+//     }
+// }
+// index("abcde",'c')
+
+// 6. Write a function to delete all vowels from a sentence. Assume that the sentence is not more than 25 characters long.
+// function vowd(str){
+//     console.log(str.replace(/[aeiou]/g,''))
+// }
+//  vowd("quick brown fox")
+
+//  7. Write a function with switch statement to count the number of occurrences of any two vowels in succession in a line of text
+// var vow=['a','e','i','o','u']
+// console.log(vow.includes(curr)&& vow.includes(next))
+// function occurence(str){
+// for (a in str) {
+
+//     var curr = str[a]
+//     var wc = 0
+//     var next = str[a + 1]
+//     if (vow.includes(curr) && vow.includes(next)) {
+//         var word = curr + next
+//         console.log("Ocurrences " + wc)
+//         wc++
+
+//     }
+//     else{
+
+//     }
+// }
+// }
+// occurence("Pleases read this application and give me gratuity")
+
+// 8. The distance between two cities (in km.) is input through the keyboard. Write four functions to convert and print this distance in meters, feet, inches and centimeters.
+// var c=Number(prompt('Enter distance of city in Km'))
+// function meter(distance){
+//     var m = distance * 1000;
+//     document.write("Distance in meter: "+ m+ " m"+"</br>");
+//     return m ;
+// } 
+// function feet(distance){
+//    var f = distance * 3280.84;
+//    document.write("Distance in feet: "+ f+ " feet"+"</br>");
+//    return f ;
+// } 
+// function inch(distance){
+//    var i = distance * 39370.1;
+//    document.write("Distance in inches: "+ i+ " inches"+"</br>");
+//    return i ;
+// } 
+// function centimeter(distance){
+//    var c = distance * 100000;
+//    document.write("Distance in centimeter: "+ c+ " cm"+"</br>");
+//    return c ;
+// } 
+// meter(c);
+// feet(c);
+// inch(c);
+// centimeter(c);
+
+// 9. Write a program to calculate overtime pay of employees. Overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour.
+var hour=Number(prompt('Enter working hours total'))
+if (hours>40){
+    var addi=hours-40
+    addi=1200*addi
+    document.write("your salary is "+addi)
 }
-
-function area (a,b,c){
-    var Ss=S(a,b,c)
-    var are = Ss*((Ss - a)*(Ss -b)*(Ss - c))
-alert("The Area Of triangle is "+are)
-console.log(are)
-
-}
-area(x,y,z)
