@@ -135,9 +135,35 @@
 // centimeter(c);
 
 // 9. Write a program to calculate overtime pay of employees. Overtime is paid at the rate of Rs. 12.00 per hour for every hour worked above 40 hours. Assume that employees do not work for fractional part of an hour.
-var hour=Number(prompt('Enter working hours total'))
-if (hours>40){
-    var addi=hours-40
-    addi=1200*addi
-    document.write("your salary is "+addi)
-}
+// var hour=Number(prompt('Enter working hours total'))
+// if (hours>40){
+//     var addi=hours-40
+//     addi=1200*addi
+//     document.write("your salary is "+addi)
+// }
+
+//10. A cashier has currency notes of denominations 10, 50 and 100 
+
+/* var amount = +prompt("Enter your amount in hundreds");
+var hundred = Math.floor( amount/100);
+amount = amount - hundred*100 
+document.write("You will have "+hundred+ " hundreds notes ");
+var fifty = Math.floor(amount/50); 
+amount = amount - fifty*50
+document.write(fifty+ " fifty notes ");
+amount = Math.floor(amount/10);  
+document.write(amount + " ten notes"); */
+
+// Assignment #42-44
+// 1. Show an alert box on click on a link.
+// function ale(){
+//     alert("Alert on link")
+// }
+// 2. Display some Mobile images in browser. On click on an image Show the message in alert to user.
+// function imaalert(){
+//     alert("Thanks for Purchasing a Phone from us")
+// }
+
+// 3. Display 10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be deleted.
+
+
