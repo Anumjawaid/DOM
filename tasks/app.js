@@ -199,3 +199,6 @@ function submit(){
    
 }
 // 2. Suppose in your webpage there is content area in whichyou have entered your item details, but user can only seesome details on first look. When user clicks on “Readmore” button, full detail of that particular item will bedisplayed.
+function show(){
+    document.getElementById('pl').innerHTML=document.getElementById('ml').innerHTML
+}
