@@ -166,4 +166,36 @@ document.write(amount + " ten notes"); */
 
 // 3. Display 10 student records in table and each row should contain a delete button. If you click on a button to delete a record, entire row should be deleted.
 
+// function del(id){
+//     document.getElementById(id).remove()
 
+// }
+
+// 4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout
+function newim(){
+    document.getElementById('img1').src='https://vignette.wikia.nocookie.net/p__/images/9/99/105_001.PNG/revision/latest?cb=20150619170202&path-prefix=protagonist'
+}
+function oldim(){
+    document.getElementById('img1').src='https://i.ytimg.com/vi/vLbNsPD_pm8/maxresdefault.jpg'
+}
+
+// 5. Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser.
+var number=0;
+function increase(){
+    number++
+    document.getElementById('num').innerHTML=number
+}
+function decrease(){
+    number--
+    document.getElementById('num').innerHTML=number
+}
+// Assignment 49-52
+// 1. Create a signup form and display form data in your webpage on submission.
+var val=document.getElementById('form')
+function submit(){
+      for (a in val){
+          document.write(val[a].value+"<br>")
+      }
+   
+}
+// 2. Suppose in your webpage there is content area in whichyou have entered your item details, but user can only seesome details on first look. When user clicks on “Readmore” button, full detail of that particular item will bedisplayed.
