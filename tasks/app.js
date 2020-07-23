@@ -172,33 +172,95 @@ document.write(amount + " ten notes"); */
 // }
 
 // 4. Display an image in browser. Change the picture on mouseover and set the first picture on mouseout
-function newim(){
-    document.getElementById('img1').src='https://vignette.wikia.nocookie.net/p__/images/9/99/105_001.PNG/revision/latest?cb=20150619170202&path-prefix=protagonist'
-}
-function oldim(){
-    document.getElementById('img1').src='https://i.ytimg.com/vi/vLbNsPD_pm8/maxresdefault.jpg'
-}
+// function newim(){
+//     document.getElementById('img1').src='https://vignette.wikia.nocookie.net/p__/images/9/99/105_001.PNG/revision/latest?cb=20150619170202&path-prefix=protagonist'
+// }
+// function oldim(){
+//     document.getElementById('img1').src='https://i.ytimg.com/vi/vLbNsPD_pm8/maxresdefault.jpg'
+// }
 
 // 5. Show a counter in browser. Counter should increase on click on increase button and decrease on click on decrease button. And show updated counter value in browser.
-var number=0;
-function increase(){
-    number++
-    document.getElementById('num').innerHTML=number
-}
-function decrease(){
-    number--
-    document.getElementById('num').innerHTML=number
-}
+// var number=0;
+// function increase(){
+//     number++
+//     document.getElementById('num').innerHTML=number
+// }
+// function decrease(){
+//     number--
+//     document.getElementById('num').innerHTML=number
+// }
 // Assignment 49-52
 // 1. Create a signup form and display form data in your webpage on submission.
-var val=document.getElementById('form')
-function submit(){
-      for (a in val){
-          document.write(val[a].value+"<br>")
-      }
+// var val=document.getElementById('form')
+// function submit(){
+//       for (a in val){
+//           document.write(val[a].value+"<br>")
+//       }
    
-}
+// }
 // 2. Suppose in your webpage there is content area in whichyou have entered your item details, but user can only seesome details on first look. When user clicks on “Readmore” button, full detail of that particular item will bedisplayed.
-function show(){
-    document.getElementById('pl').innerHTML=document.getElementById('ml').innerHTML
-}
+// function show(){
+//     document.getElementById('pl').innerHTML=document.getElementById('ml').innerHTML
+// }
+
+// Assignment No :58-63
+// Q1
+// i
+// var con=document.getElementById('main-content')
+// ii
+
+// var c=document.getElementById('main-content')
+// for (var i=1;i<10;i+=2)
+// {console.log(c.childNodes[i])}
+
+// iii
+// Get all elements of class “render” and show their innerHTMLin browser.
+
+// var n=document.getElementsByClassName('render')
+// for(var i=0;i<5;i++){
+// console.log(n[i].innerHTML)}
+
+// iv. Fill input value whose element id first-name using javascript.
+
+// var f=document.getElementById('first-name')
+// f.value="ABCD"
+
+// v. Repeat part iv for id ”last-name” and “email”.
+// var f=document.getElementById('last-name')
+// f.value="XYZ"
+
+// var f=document.getElementById('email')
+// ff.value="abcxyz89@medium.com"
+
+// 2. use HTML code of question 1 and show the result on browser.
+// i. What is node type of element having id “form-content”
+
+// var f=document.getElementById('form-content')
+// console.log(f.nodeType)
+// ii. Show node type of element having id “lastName” and its child node.
+
+// var l=document.getElementById("lastName")
+// console.log(l.nodeType)
+// console.log(l.childNodes[0])
+
+// iii. Update child node of element having id “lastName”.
+
+// var l=document.getElementById("lastName")
+// l.childNodes[0].textContent="Updated"
+// console.log(l.childNodes[0])
+
+// iv. Get First and last child of id “main-content”.
+
+// var m=document.getElementById("main-content")
+// console.log(m.childNodes.length)
+// console.log(m.childNodes[1])
+// console.log(m.childNodes[9])
+
+// v. Get next and previous siblings of id “lastName”.
+// var ln=document.getElementById('lastName')
+
+// vi. Get parent node and node type of element having id “email”
+var p=document.getElementById('email')
+console.log(p.nodeType)
+console.log(p.parentNode)
+
