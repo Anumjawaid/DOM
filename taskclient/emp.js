@@ -36,11 +36,19 @@ document.getElementById("desig").disabled = true;
 document.getElementById("sal").disabled = true;
 document.getElementById("age").disabled = true;
 function settext(){
-    var a =String(x.value)
-    console.log()
+    var b=String(x.value).indexOf(" ")
+    var ind=String(x.value).slice(0,b)
+    var i=empArr.fn.indexOf(ind)
+    fn.value=empArr.fn[i]
+    ln.value=empArr.Ln[i]
+    desig.value=empArr.desig[i]
+    sal.value=empArr.Salary[i]
+    age.value=empArr.Age[i]
+
+    console.log(empArr.fn[ind],"e")
     console.log(String(x.value))
     console.log(String(x.value).indexOf(" "),"fg")
-    console.log(String(x.value).slice(0,4),"k")
+    console.log(empArr.fn.indexOf(ind),"k")
 
 }
 
